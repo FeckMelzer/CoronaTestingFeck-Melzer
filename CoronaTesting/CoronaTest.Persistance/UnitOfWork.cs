@@ -1,5 +1,6 @@
 ﻿using CoronaTest.Core.Contracts;
 using CoronaTest.Core.Entities;
+using CoronaTest.Persistence;
 using CoronaTest.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;

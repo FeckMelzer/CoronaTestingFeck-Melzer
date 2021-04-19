@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CoronaTest.Core.Contracts
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IAsyncDisposable
     {
         IAuthTokenRepository AuthTokens { get; }
         ICampaignRepository Campaigns { get; }
