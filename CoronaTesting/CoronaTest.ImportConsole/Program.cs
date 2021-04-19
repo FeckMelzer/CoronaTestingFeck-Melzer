@@ -11,7 +11,7 @@ namespace CoronaTest.ImportConsole
     {
         static async Task Main(string[] args)
         {
-            // await InitDataAsync();
+            await InitDataAsync();
 
             Console.WriteLine();
             Console.Write("Beenden mit Eingabetaste ...");
