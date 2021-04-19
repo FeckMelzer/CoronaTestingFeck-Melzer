@@ -65,5 +65,10 @@ namespace CoronaTest.Persistence.Repositories
 
         public async Task<Campaign> GetByIdAsync(int id)
         => await _dbContext.Campaigns.SingleOrDefaultAsync(c => c.Id == id);
+
+        public void Delete(Campaign campaignInDb)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

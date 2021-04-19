@@ -28,6 +28,11 @@ namespace CoronaTest.Persistence.Repositories
                 .Participants
                 .AddRangeAsync(participants);
 
+        public Task<Participant[]> GetAllAsync()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<Participant> GetByIdAsync(int id)
             => await _dbContext
                 .Participants

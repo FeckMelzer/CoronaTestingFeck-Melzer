@@ -20,5 +20,6 @@ namespace CoronaTest.Core.Contracts
         Task<TestCenterDto[]> GetByPostalCodeAsync(string postalCode);
         void Update(TestCenter tesCenter);
         void Remove(TestCenter testCenter);
+        void Delete(TestCenter testCenterInDb);
     }
 }

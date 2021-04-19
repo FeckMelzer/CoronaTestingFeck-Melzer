@@ -7,12 +7,19 @@ namespace CoronaTest.Core.Contracts
 {
     public interface IUnitOfWork
     {
+        IAuthTokenRepository AuthTokens { get; }
         ICampaignRepository Campaigns { get; }
         ITestCenterRepository TestCenters { get; }
         IParticipantRepository Participants { get; }
         IExaminationRepository Examinations { get; }
+
+        IUserRepository Users { get; }
+
+        IRoleRepository Roles { get; }
         Task<int> SaveChangesAsync();
         Task DeleteDatabaseAsync();
         Task MigrateDatabaseAsync();
+
+        Task CreateDatabaseAsync();
     }
 }

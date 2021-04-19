@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CoronaTest.Core.Entities
 {
-    public class AuthUser
+    public class User
     {
         [Required]
         [EmailAddress]

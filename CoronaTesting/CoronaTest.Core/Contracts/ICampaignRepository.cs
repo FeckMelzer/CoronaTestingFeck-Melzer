@@ -17,5 +17,6 @@ namespace CoronaTest.Core.Contracts
         void Update(Campaign modifiedCampaign);
         void Remove(Campaign campaign);
         Task<Campaign> GetByIdAsync(int id);
+        void Delete(Campaign campaignInDb);
     }
 }

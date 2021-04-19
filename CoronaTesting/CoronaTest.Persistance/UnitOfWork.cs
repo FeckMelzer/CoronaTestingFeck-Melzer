@@ -19,6 +19,12 @@ namespace CoronaTest.Persistance
         public IParticipantRepository Participants { get; }
         public IExaminationRepository Examinations { get; }
 
+        public IAuthTokenRepository AuthTokens => throw new NotImplementedException();
+
+        public IUserRepository Users => throw new NotImplementedException();
+
+        public IRoleRepository Roles => throw new NotImplementedException();
+
         public UnitOfWork() : this(new ApplicationDbContext())
         {
         }

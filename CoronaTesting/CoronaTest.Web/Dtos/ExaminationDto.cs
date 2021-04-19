@@ -1,5 +1,5 @@
 ﻿using CoronaTest.Core.Entities;
-using CoronaTest.Core.Enums;
+using CoronaTest.Core.Sets;
 using System;
 using System.Collections.Generic;
 using System.Linq;

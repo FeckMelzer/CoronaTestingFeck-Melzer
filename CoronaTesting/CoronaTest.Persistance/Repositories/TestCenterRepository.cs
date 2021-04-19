@@ -30,6 +30,11 @@ namespace CoronaTest.Persistence.Repositories
                 .TestCenters
                 .AddRangeAsync(testCenters);
 
+        public void Delete(TestCenter testCenterInDb)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<TestCenterDto[]> GetAllAsync()
         => await _dbContext.TestCenters
                 .Select(t => new TestCenterDto

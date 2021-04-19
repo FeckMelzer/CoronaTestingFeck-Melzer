@@ -229,5 +229,50 @@ namespace CoronaTest.Persistence.Repositories
                      TestResult = e.TestResult,
                      ExaminationState = e.ExaminationState
                  }).ToArrayAsync();
+
+        public Task<ExaminationDto[]> GetByCampaignIdAsync(int campaignId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Examination[]> GetByCampaignTestCenterAsync(Campaign campaign, TestCenter testCenter)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Examination[]> IExaminationRepository.GetByParticipantIdAsync(int participantId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ExaminationDto[]> GetExaminationDtosWithFilterAsync(DateTime? from = null, DateTime? to = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Examination> IExaminationRepository.GetByIdentifierAsync(string identifier)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Examination[]> IExaminationRepository.GetByCampaignIdAsync(int campaignId)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<IEnumerable<Examination>> IExaminationRepository.GetByTestCenterIdAsync(int testCenterId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Examination>> GetExaminationsWithFilterAsync(string postalCode = null, DateTime? from = null, DateTime? to = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Examination[]> IExaminationRepository.GetAllAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
