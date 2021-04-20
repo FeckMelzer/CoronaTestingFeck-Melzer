@@ -1,0 +1,80 @@
+﻿@page
+@model CoronaTest.Web.Pages.User.IndexModel
+@{
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div>
+            <a type="button" asp-page="/User/Reservation" asp-route-verificationIdentifier="@Model.VerificationIdentifier" class="btn btn-primary">Neue Testung</a>
+            <a type="button" asp-page="/Index" class="btn btn-secondary">Logout</a>
+            <h2 />
+        </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Kampagne
+                        </th>
+                        <th>
+                            Zeitpunkt
+                        </th>
+                        <th>
+                            Test-Center
+                        </th>
+                        <th>
+                            Ergebnis
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Examinations)
+                    {
+                    <tr>
+                        <td>
+                            @item.Campaign?.Name
+                        </td>
+                        <td>
+                            @item.ExaminationAt.ToShortDateString()
+                            @item.ExaminationAt.ToShortTimeString()
+                        </td>
+                        <td>
+                            @item.TestCenter?.Name
+                        </td>
+                        <td>
+                            @item.Result
+                        </td>
+                        <td>
+                            <a asp-page-handler="Delete" asp-route-id="@item.Id" asp-route-verificationIdentifier="@Model.VerificationIdentifier">Stornieren</a> |
+                            <a asp-page="/User/Reservation" asp-route-id="@item.Id" asp-route-verificationIdentifier="@Model.VerificationIdentifier">Ändern</a>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+    </div>
+    <div class="col-md-4">
+        <div>
+            <h4>Stammdaten</h4>
+        </div>
+        <div class="form-group">
+            <label asp-for="Participant.Fullname" class="control-label"></label>
+            <input asp-for="Participant.Fullname" class="form-control" readonly />
+        </div>
+        <div class="form-group">
+            <label asp-for="Participant.Mobilephone" class="control-label"></label>
+            <input asp-for="Participant.Mobilephone" class="form-control" readonly />
+        </div>
+        <div class="form-group">
+            <label asp-for="Participant.SocialSecurityNumber" class="control-label"></label>
+            <input asp-for="Participant.SocialSecurityNumber" class="form-control" readonly />
+        </div>
+        <div>
+            <a type="button" asp-page="/User/Details" asp-route-verificationIdentifier="@Model.VerificationIdentifier">Ändern</a>
+        </div>
+    </div>
+</div>
+
