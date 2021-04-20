@@ -74,8 +74,8 @@ namespace CoroneTest.Web
                     Description = "Die API liefert alle wichtigen Infos zu den Corona Tests",
                     Contact = new OpenApiContact
                     {
-                        Name = "Michael Kienberger",
-                        Email = "m_kienberger@gmx.net"
+                        Name = "Feck-Melzer",
+                        Email = "lukas.f.melzer@gmail.com"
                     },
                     License = new OpenApiLicense
                     {
