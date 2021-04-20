@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoronaTest.Web", "CoronaTest.Web\CoronaTest.Web.csproj", "{EFE2DC1D-A0F0-4D2A-A89F-375F248585B3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoronaTest.Wpf", "CoronaTest.Wpf\CoronaTest.Wpf.csproj", "{C9245D24-B8EC-4F07-A70C-8173EFDB3BF1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoronaTest.PoC", "CoronaTest.PoC\CoronaTest.PoC.csproj", "{73FD83E8-0270-48C8-9EB9-2F3C6C5BB087}"
 EndProject
 Global
@@ -43,10 +41,6 @@ Global
 		{EFE2DC1D-A0F0-4D2A-A89F-375F248585B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFE2DC1D-A0F0-4D2A-A89F-375F248585B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFE2DC1D-A0F0-4D2A-A89F-375F248585B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C9245D24-B8EC-4F07-A70C-8173EFDB3BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9245D24-B8EC-4F07-A70C-8173EFDB3BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9245D24-B8EC-4F07-A70C-8173EFDB3BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C9245D24-B8EC-4F07-A70C-8173EFDB3BF1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{73FD83E8-0270-48C8-9EB9-2F3C6C5BB087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{73FD83E8-0270-48C8-9EB9-2F3C6C5BB087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73FD83E8-0270-48C8-9EB9-2F3C6C5BB087}.Release|Any CPU.ActiveCfg = Release|Any CPU
